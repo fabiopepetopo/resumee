@@ -1,5 +1,3 @@
-import { Projects } from "../Projects";
-
 export const Link = ({ type, href, text }) => {
   const icons = {
     github: "images/github.png",
@@ -11,8 +9,8 @@ export const Link = ({ type, href, text }) => {
 
   return (
     <div className="flex justify-start items-center mb-1">
-      <img className="max-w-[20px] mr-2" src={icons[type]} />
-      <a href={href} target={"_blank"}>
+      <img alt={type} className="max-w-[20px] mr-2" src={icons[type]} />
+      <a href={href} target={"_blank"} rel={"noreferrer"}>
         {text}
       </a>
     </div>

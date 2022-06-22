@@ -6,6 +6,7 @@ export { Header } from "./Header";
 export { Job } from "./Job";
 export { Jobs } from "./Jobs";
 export { Language } from "./Language";
+export { LanguageButton } from "./LanguageButton";
 export { Layout } from "./Layout";
 export { Link } from "./Link";
 export { Main } from "./Main";

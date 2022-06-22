@@ -1,4 +1,4 @@
-import { Download } from "components";
+import { Download, LanguageButton } from "components";
 export const Nav = () => {
   return (
     <nav
@@ -7,7 +7,10 @@ export const Nav = () => {
       }
     >
       <img alt="logo" className="max-w-[100px]" src="images/logo.png"></img>
-      <Download />
+      <div className="flex">
+        <Download />
+        <LanguageButton />
+      </div>
     </nav>
   );
 };

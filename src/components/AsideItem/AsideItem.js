@@ -7,10 +7,13 @@ export const AsideItem = ({ title, description, languages, tags, links }) => {
         {title}
       </h3>
       {description && <p className="">{description}</p>}
-      {links && links.map((link) => <Link {...link} />)}
-      {languages && languages.map((language) => <Language {...language} />)}
+      {links && links.map((link, index) => <Link key={index} {...link} />)}
+      {languages &&
+        languages.map((language, index) => (
+          <Language key={index} {...language} />
+        ))}
       <div className="flex flex-wrap">
-        {tags && tags.map((tag) => <Tag tag={tag} />)}
+        {tags && tags.map((tag, index) => <Tag key={index} tag={tag} />)}
       </div>
     </div>
   );
