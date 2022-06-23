@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.html2canvas-container { width: 3000px !important; height: 3000px !important; }
+.html2canvas-container { height: 1800px !important; }
 
 button::-moz-focus-inner {
     border: 0;
